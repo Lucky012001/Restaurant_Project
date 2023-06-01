@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/test.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <img class="header_image" src="image/logo.png" />
+      <h1 class="header_title">Programmers point</h1>
+      <img class="header_image2" src="image/logo.png" />
+    </div>
+    <div class="nev_bar">
+      <div class="menu" id="Home">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+
+          <li><a href="#from">From</a></li>
+        </ul>
+      </div>
+      <!-- ---------------------------------Home-start--------------------------- -->
+      <div id="Home" class="background_color">
+        <img class="girl_image" src="image/girl.png" />
+
+        <div class="big_font">WELCOME TO</div>
+        <div class="golden_font">PROGRAMMERS POINT</div>
+        <div class="small_fonts">
+          <p>
+            Start learning with our<br />
+            export and give a new<br />
+            way to your career.
+          </p>
+        </div>
+      </div>
+      <!-- -----------------------------------Home-end---------------------- -->
+
+      <!-- ----------------------------------------from-start----------------------- -->
+      <div id="from" class="background">
+        <div class="background_inner">
+          <div class="title">Ragistrastion form</div>
+          <div class="title_line"></div>
+          <div class="left">
+            <div class="box-title">Full Name</div>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              id="name"
+              class="inputbox"
+            />
+            <div class="box-title">Email</div>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="email"
+              class="inputbox"
+            />
+            <div class="box-title">Password</div>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="password"
+              class="inputbox"
+            />
+            <div class="box-title">Gender</div>
+            <input type="radio" id="gender" name="gender" value="male" />
+            Male
+            <br />
+            <input type="radio" id="gender" name="gender" value="female" /> Female
+            <br />
+            <input type="radio" id="gender" name="gender" value="others" /> Others
+            <br />
+          </div>
+          <div class="right">
+            <div class="box-title">Username</div>
+            <input
+              type="text"
+              placeholder="Enter your username"
+              id="username"
+              class="inputbox"
+            />
+  
+            <div class="box-title">Phone Number</div>
+            <input
+              type="number"
+              placeholder="phone number"
+              id="number"
+              class="inputbox"
+            />
+  
+            <div class="box-title">Confirm password</div>
+            <input
+              type="password"
+              placeholder="Confirm password"
+              id="confirm-password"
+              class="inputbox"
+            />
+            <div class="box-title">Select Course</div>
+            <select name="Course" id="subject" class="select">
+              <option value="volvo">----Select Course----</option>
+              <option value="Cyber Security">Cyber Security</option>
+              <option value="Game Development">Game Development</option>
+              <option value="Ethical Hacking">Ethical Hacking</option>
+              <option value="Python">Python</option>
+              <option value="HTML5">HTML5</option>
+              <option value="CSS3">CSS3</option>
+              <option value="Bootstrap">Bootstrap</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="JQuery">JQuery</option>
+              <option value="Ajax">Ajax</option>
+              <option value="Angular JS">Angular JS</option>
+              <option value="PHP">PHP</option>
+              <option value="Core Java">Core Java</option>
+              <option value="Advance Java">Advance Java</option>
+              <option value="Corporate Java">Corporate Java</option>
+              <option value="IOS">IOS</option>
+              <option value="Big Data">Big Data</option>
+              <option value="Hadoop">Hadoop</option>
+            </select>
+          </div>
+          <button class="button" onclick="show()">Submit</button>
+        </div>
+      </div>
+    </body>
+    <script>
+      function show() {
+        var obj = {
+          Full_name: document.getElementById("name").value,
+          Email: document.getElementById("email").value,
+          Username: document.getElementById("username").value,
+          Password: document.getElementById("password").value,
+          Confirm_password: document.getElementById("confirm-password").value,
+          Gender: document.getElementById("gender").value,
+          Number: document.getElementById("number").value,
+          Select_Course: document.getElementById("subject").value,
+        };
+        console.log(obj);
+      }
+    </script>
+    </div>
+  </body>
+</html>
